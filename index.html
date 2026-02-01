@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Video Upload with Progress</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Ride</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 400px;
-      margin: 40px auto;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 24px;
       text-align: center;
     }
-    progress {
-      width: 100%;
-      height: 25px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
     }
-    #status {
-      white-space: pre-wrap;
-      text-align: left;
-      margin-top: 15px;
-      background: #f3f3f3;
-      padding: 10px;
-      border-radius: 6px;
-      font-family: monospace;
+
+    header p {
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .cta {
+      text-align: center;
+      background: #e5e7eb;
+      border-radius: 12px;
+      padding: 40px 20px;
+    }
+
+    .cta button {
+      background: #0f172a;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #1e293b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
+
 <body>
-  <h2>Upload Video</h2>
-  <input type="text" id="username" placeholder="Enter username (e.g. charlie001)"><br><br>
-  <input type="file" id="video" accept="video/*"><br><br>
-  <button onclick="upload()">Upload</button><br><br>
 
-  <progress id="progressBar" value="0" max="100" hidden></progress>
-  <div id="percent"></div>
-  <pre id="status"></pre>
+  <header>
+    <h1>Healthy Ride</h1>
+    <p>Simple car maintenance. No stress.</p>
+  </header>
 
-  <script>
-    function upload() {
-      const username = document.getElementById("username").value.trim();
-      const video = document.getElementById("video").files[0];
-      if (!username || !video) return alert("Enter username and choose a video");
+  <section>
+    <h2>What is Healthy Ride?</h2>
+    <p>
+      Healthy Ride helps you stay on top of your car maintenance without
+      complicated menus or confusing features. Track tasks, mileage, and history
+      all in one clean app.
+    </p>
+  </section>
 
-      const formData = new FormData();
-      formData.append("username", username);
-      formData.append("video", video);
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🚗 Multiple Cars</h3>
+        <p>Add and manage all your vehicles in one place.</p>
+      </div>
 
-      const xhr = new XMLHttpRequest();
-      const progressBar = document.getElementById("progressBar");
-      const percentText = document.getElementById("percent");
-      const status = document.getElementById("status");
+      <div class="card">
+        <h3>🛠 Maintenance Tasks</h3>
+        <p>Oil changes, tires, brakes — track it all.</p>
+      </div>
 
-      progressBar.hidden = false;
-      percentText.textContent = "";
+      <div class="card">
+        <h3>📊 Mileage History</h3>
+        <p>See how your car changes over time.</p>
+      </div>
 
-      xhr.upload.addEventListener("progress", (e) => {
-        if (e.lengthComputable) {
-          const percent = Math.round((e.loaded / e.total) * 100);
-          progressBar.value = percent;
-          percentText.textContent = percent + "% uploaded";
-        }
-      });
+      <div class="card">
+        <h3>🚫 No Ads (Premium)</h3>
+        <p>Upgrade to remove ads and unlock unlimited tracking.</p>
+      </div>
+    </div>
+  </section>
 
-      xhr.addEventListener("load", () => {
-        progressBar.hidden = true;
-        percentText.textContent = "";
-        status.textContent = xhr.responseText;
-      });
+  <section class="cta">
+    <h2>Download the App</h2>
+    <p>Available now on the App Store</p>
+    <button onclick="alert('App Store link coming soon!')">
+      Get Healthy Ride
+    </button>
+  </section>
 
-      xhr.addEventListener("error", () => {
-        status.textContent = "❌ Upload failed. Check connection or server.";
-      });
+  <footer>
+    © 2026 Healthy Ride. All rights reserved.
+  </footer>
 
-      xhr.open("POST", "http://98.180.198.27:4646/api/upload");
-      xhr.send(formData);
-    }
-  </script>
 </body>
 </html>
-
