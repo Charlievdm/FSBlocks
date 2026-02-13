@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FS BLOCKS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f4ef;
+      --paper: #fffdf8;
+      --ink: #111111;
+      --muted: #5c5c57;
+      --brand: #0e2a47;
+      --brand-2: #2d5f8b;
+      --line: #dedbd2;
+      --accent: #ff7a00;
+      --shadow: 0 24px 60px rgba(14, 42, 71, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Sora", sans-serif;
+      background:
+        radial-gradient(circle at 10% -10%, rgba(45, 95, 139, 0.2), transparent 42%),
+        radial-gradient(circle at 90% 10%, rgba(255, 122, 0, 0.18), transparent 35%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1rem;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      color: var(--brand);
+    }
+
+    .tag {
+      font-family: "IBM Plex Mono", monospace;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      line-height: 1.05;
+      max-width: 12ch;
+    }
+
+    .hero p {
+      max-width: 60ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .apps-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1.2rem 0 0.8rem;
+    }
+
+    .apps-head h2 {
+      font-size: 1rem;
+      font-family: "IBM Plex Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand);
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .app-scroll {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(300px, 420px);
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 0.6rem 0.1rem 0.8rem;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: var(--brand-2) transparent;
+    }
+
+    .app-card {
+      scroll-snap-align: start;
+      text-decoration: none;
+      color: inherit;
+      background: linear-gradient(165deg, var(--paper), #f9f7f2);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+    }
+
+    .app-card:hover,
+    .app-card:focus-visible {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 70px rgba(14, 42, 71, 0.2);
+      border-color: var(--brand-2);
+      outline: none;
+    }
+
+    .app-shot {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      background: #dcdad4;
+    }
+
+    .app-body {
+      padding: 1rem 1rem 1.2rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .app-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    .app-meta {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .app-link {
+      margin-top: 0.3rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .footer {
+      margin-top: 2.6rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      font-family: "IBM Plex Mono", monospace;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 720px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hint {
+        display: none;
+      }
+
+      .app-scroll {
+        grid-auto-columns: 86%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="logo">FS BLOCKS</div>
+      <div class="tag">Apps built with intention</div>
+    </header>
+
+    <section class="hero">
+      <h1>Products by FS BLOCKS.</h1>
+      <p>Browse every app in one place. Scroll through the portfolio and open each product page for details, downloads, and screenshots.</p>
+    </section>
+
+    <section>
+      <div class="apps-head">
+        <h2>App Portfolio</h2>
+        <span class="hint">Scroll horizontally</span>
+      </div>
+
+      <div class="app-scroll" aria-label="FS BLOCKS apps">
+        <a class="app-card" href="healthy-rides.html" aria-label="Open Healthy Rides app page">
+          <img class="app-shot" src="image2.png" alt="Healthy Rides app preview" />
+          <div class="app-body">
+            <div class="app-name">Healthy Rides</div>
+            <p class="app-meta">Vehicle maintenance tracking with reminders, mileage logs, and custom service tasks.</p>
+            <span class="app-link">Open App Page</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">© 2026 FS BLOCKS</footer>
+  </main>
+</body>
+</html>
