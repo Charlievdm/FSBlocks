@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duoplex – Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            background: #fff;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 4px;
+            color: #111;
+        }
+
+        .meta {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 28px;
+            margin-bottom: 6px;
+            color: #111;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        a {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms of Service — Duoplex</h1>
+        <p class="meta">FS Blocks LLC &nbsp;·&nbsp; Last updated: May 17, 2026</p>
+
+        <p>By creating an account or using Duoplex, you agree to these Terms of Service. If you do not agree, do not use the app.</p>
+
+        <h2>1. The Service</h2>
+        <p>Duoplex is a cloud storage and film analysis platform for kickers. We provide tools to upload, store, and tag video content. We reserve the right to modify, suspend, or discontinue the service at any time without notice or liability.</p>
+
+        <h2>2. Your Account</h2>
+        <p>You are responsible for maintaining the security of your account and all activity that occurs under it. We reserve the right to terminate any account at any time for any reason.</p>
+
+        <h2>3. Storage and Data</h2>
+        <p>Duoplex offers cloud storage for video content. FS Blocks LLC is not responsible for any loss, corruption, or deletion of data, videos, or any other content stored on the platform. We do not guarantee uptime, availability, or data integrity. You are solely responsible for maintaining your own backups of any content you upload. Use of the service is entirely at your own risk.</p>
+
+        <h2>4. Subscriptions and Billing</h2>
+        <p>Duoplex offers paid subscription plans processed through Apple's App Store. All billing, refunds, and subscription management are governed by Apple's terms and handled through your Apple ID. FS Blocks LLC has no control over and accepts no liability for billing disputes, failed charges, or refund decisions made by Apple.</p>
+
+        <h2>5. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, FS Blocks LLC, its owners, employees, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages of any kind arising from your use of or inability to use Duoplex. This includes but is not limited to loss of data, loss of revenue, loss of profits, loss of business opportunity, or any other loss, regardless of whether FS Blocks LLC was advised of the possibility of such damages. Your sole remedy for dissatisfaction with the service is to stop using it.</p>
+
+        <h2>6. No Warranties</h2>
+        <p>Duoplex is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted, error-free, secure, or free of viruses or other harmful components. We make no guarantees about the accuracy, reliability, or completeness of any content on the platform.</p>
+
+        <h2>7. User Content</h2>
+        <p>You retain ownership of any content you upload to Duoplex. By uploading content you confirm that you have the rights to that content and that it does not violate any laws or third party rights. FS Blocks LLC is not responsible for any content uploaded by users.</p>
+
+        <h2>8. Prohibited Use</h2>
+        <p>You agree not to use Duoplex for any unlawful purpose, to upload content that violates any law, to attempt to gain unauthorized access to any part of the service, or to interfere with the operation of the service in any way.</p>
+
+        <h2>9. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless FS Blocks LLC and its owners, employees, and affiliates from any claims, damages, losses, or expenses including legal fees arising from your use of Duoplex or your violation of these terms.</p>
+
+        <h2>10. Changes to Terms</h2>
+        <p>We reserve the right to update these Terms of Service at any time. Continued use of the app after changes are posted constitutes your acceptance of the new terms.</p>
+
+        <h2>11. Governing Law</h2>
+        <p>These terms are governed by the laws of the State of Arkansas, United States, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Washington County, Arkansas.</p>
+
+        <h2>12. Contact</h2>
+        <p>For any questions regarding these terms contact us at <a href="mailto:support@fsblocks.com">support@fsblocks.com</a>.</p>
+    </div>
+</body>
+</html>
