@@ -1,1 +1,307 @@
-hello man
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DUOPLEX</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --ink-faint: #888;
+    --paper: #fafaf7;
+    --rule: #d8d6cf;
+    --accent: #b4541f;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Charter", "Georgia", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+  }
+
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 32px;
+    margin-bottom: 48px;
+  }
+
+  .eyebrow {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .meta {
+    color: var(--ink-faint);
+    font-size: 14px;
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 56px 0 16px;
+    letter-spacing: -0.01em;
+  }
+
+  h2::before {
+    content: counter(section) ".";
+    counter-increment: section;
+    color: var(--accent);
+    margin-right: 12px;
+    font-feature-settings: "tnum";
+  }
+
+  main { counter-reset: section; }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 28px 0 8px;
+  }
+
+  p { margin: 0 0 16px; color: var(--ink-soft); }
+
+  ul {
+    margin: 0 0 16px;
+    padding-left: 24px;
+    color: var(--ink-soft);
+  }
+
+  li { margin-bottom: 6px; }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover { text-decoration-thickness: 2px; }
+
+  .lede {
+    font-size: 19px;
+    color: var(--ink);
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 15px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  td { color: var(--ink-soft); }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--ink-faint);
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 48px 24px 80px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 20px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <p class="eyebrow">Legal · DUOPLEX</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective May 22, 2026</p>
+</header>
+
+<p class="lede">
+  This policy explains what DUOPLEX collects, why, where it's stored, and the choices you have. Plain language first, details below.
+</p>
+
+<main>
+
+<h2>Who we are</h2>
+<p>
+  DUOPLEX ("we", "us", or "the app") is an iOS application that lets you upload, organize, and play back your own video content, organized into albums and sessions. This policy applies to the DUOPLEX app and its backend services.
+</p>
+<p>
+  If you have questions about this policy or your data, contact us at <strong>fullspeedblocks@gmail.com</strong>.
+</p>
+
+<h2>What we collect</h2>
+
+<h3>Account information</h3>
+<p>
+  When you sign up, we collect your <strong>email address</strong> and a <strong>password</strong> (stored as a one-way hash — we never see your actual password). We also generate a unique <strong>user ID</strong> tied to your account.
+</p>
+
+<h3>Content you upload</h3>
+<p>
+  DUOPLEX stores the videos, thumbnails, albums, and session data you create in the app. This includes:
+</p>
+<ul>
+  <li>Video files and their thumbnails</li>
+  <li>Albums and the videos you add to them</li>
+  <li>Sessions and associated metadata</li>
+  <li>"Kick data" and other in-app activity you record</li>
+  <li>Video storage size and related metadata</li>
+</ul>
+
+<h3>Usage and analytics</h3>
+<p>
+  We use <strong>Firebase</strong> to collect basic analytics about how the app is used — for example, sign-ins, uploads, app launches, crashes, and which features are used. This data helps us fix bugs and improve the app. Firebase may collect device identifiers, IP address, device model, OS version, and approximate location derived from IP.
+</p>
+
+<h3>Subscription information</h3>
+<p>
+  Premium subscriptions are handled through <strong>RevenueCat</strong>, which manages purchases made via Apple's App Store. We receive your subscription status (active, expired, trial, etc.) but <strong>we never see or store your payment card details</strong>. Apple and RevenueCat handle the payment itself.
+</p>
+
+<h2>Where your data lives</h2>
+<p>
+  Your account data and uploaded content are stored on <strong>Cloudflare</strong> infrastructure (R2 for video and image files, KV/D1 for account and metadata records). All requests to our backend are authenticated and protected by API keys, and traffic is encrypted in transit using HTTPS.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Data</th><th>Stored with</th><th>Purpose</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Email, hashed password, user ID</td><td>Cloudflare</td><td>Account access</td></tr>
+    <tr><td>Videos, thumbnails, albums, sessions</td><td>Cloudflare R2 + KV/D1</td><td>Storing and serving your content</td></tr>
+    <tr><td>Analytics events (logins, uploads, crashes)</td><td>Firebase (Google)</td><td>Bug fixes and product improvement</td></tr>
+    <tr><td>Subscription status</td><td>RevenueCat</td><td>Premium access management</td></tr>
+    <tr><td>Payment info</td><td>Apple App Store</td><td>Billing — we do not see this data</td></tr>
+  </tbody>
+</table>
+
+<h2>How we use your data</h2>
+<ul>
+  <li>To create and authenticate your account</li>
+  <li>To store and serve back the content you upload</li>
+  <li>To verify your subscription status and unlock premium features</li>
+  <li>To diagnose crashes and understand which features need work</li>
+  <li>To communicate with you about your account when necessary (e.g., security or service changes)</li>
+</ul>
+<p>
+  <strong>We do not sell your data.</strong> We do not show ads in DUOPLEX, and we do not share your content with advertisers or data brokers.
+</p>
+
+<h2>Third parties we use</h2>
+<p>
+  DUOPLEX relies on a small number of service providers. Each has its own privacy policy governing how it handles data on our behalf:
+</p>
+<ul>
+  <li><strong>Cloudflare</strong> — backend hosting and storage (<a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>)</li>
+  <li><strong>Firebase / Google</strong> — analytics and crash reporting (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>)</li>
+  <li><strong>RevenueCat</strong> — subscription management (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>)</li>
+  <li><strong>Apple</strong> — App Store distribution and in-app purchases (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>)</li>
+</ul>
+
+<h2>Your rights and choices</h2>
+<p>
+  You can:
+</p>
+<ul>
+  <li><strong>Access or update</strong> your account information from within the app</li>
+  <li><strong>Delete content</strong> (videos, albums, sessions) at any time from within the app — deleted videos are removed from your library and our storage</li>
+  <li><strong>Delete your account</strong> by contacting us at <strong>fullspeedblocks@gmail.com</strong>. Account deletion removes your stored videos, thumbnails, albums, sessions, and account record from our backend</li>
+  <li><strong>Opt out of analytics</strong> by disabling analytics in your iOS Settings or by contacting us</li>
+  <li><strong>Manage your subscription</strong> through your Apple ID settings</li>
+</ul>
+<p>
+  Depending on where you live (for example, the EU/UK under GDPR or California under CCPA), you may have additional rights, including the right to request a copy of your data, correct it, or object to certain processing. Email us to make any of these requests.
+</p>
+
+<h2>Data retention</h2>
+<p>
+  We keep your account information and content for as long as your account is active. When you delete content or your account, we remove it from our active systems promptly. Backups containing deleted data are cycled out within a reasonable period as part of our normal backup rotation.
+</p>
+
+<h2>Security</h2>
+<p>
+  We use HTTPS for all network traffic, store passwords as one-way hashes, and authenticate backend requests with secret API keys. While no system is perfectly secure, we take reasonable steps to protect your data and will notify affected users in the event of a breach involving personal information, as required by law.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+  DUOPLEX is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we'll delete it.
+</p>
+
+<h2>International users</h2>
+<p>
+  DUOPLEX is operated from the United States. If you use the app from outside the U.S., your data will be transferred to and stored on servers in the U.S. and other countries where our providers operate. By using the app, you consent to this transfer.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  We may update this policy as the app evolves. If we make material changes, we'll update the effective date at the top and, when appropriate, notify you in the app or by email. Continued use of DUOPLEX after changes take effect means you accept the revised policy.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions, requests, or concerns? Email <strong>fullspeedblocks@gmail.com</strong>.
+</p>
+
+</main>
+
+<footer>
+  © 2026 DUOPLEX · All rights reserved
+</footer>
+
+</div>
+</body>
+</html>
